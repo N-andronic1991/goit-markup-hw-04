@@ -111,7 +111,6 @@ h1, h2, h3, p{
 	align-items: center;
 	justify-content: center;
 	padding: 32px 0;
-	margin-left: 10px;
 	min-width: 122px;
 
 	color: var(--primary-text-color);
@@ -371,10 +370,11 @@ img{
 	height: 92px;
 	border: 1px solid var(--icon-color);
 	border-radius: 4px;
-	box-shadow: var(--shadow);
+	
 }
 .clients-link:hover, .clients-link:focus{
-	border: 1px solid var(--accent-color);
+	border-color: var(--accent-color);
+	box-shadow: var(--shadow);
 }
 
 .clients-logo-icon{
@@ -523,8 +523,12 @@ margin-bottom: 9px;
     margin-top:  var(--card-set-gap); */
 
    background-color: var(--primary-bgd-color);
-}  
-.portfolio-card .item:hover{
+} 
+.portfolio-card-link{
+	display:block;
+}
+
+.portfolio-card-link:hover{
 	box-shadow: var(--shadow);
 }
 
